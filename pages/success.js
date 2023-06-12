@@ -1,20 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { BsBagCheckFill } from 'react-icons/bs';
+import React, { useEffect } from "react";
+import Link from "next/link";
+import { useStateContext } from "../context/StateContext";
 
-import { useStateContext } from '../context/StateContext';
-import { runFireworks } from '../lib/utils';
+import { BsBagCheckFill } from "react-icons/bs";
+import { runFireworks } from "../utils/runFireworks";
 
 const Success = () => {
-  const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
-  
+  const { clearCart } = useStateContext();
+
   useEffect(() => {
-    localStorage.clear();
-    setCartItems([]);
-    setTotalPrice(0);
-    setTotalQuantities(0);
+    clearCart();
     runFireworks();
-  }, []);
+  }, [clearCart]);
 
   return (
     <div className="success-wrapper">
@@ -30,14 +27,14 @@ const Success = () => {
             order@example.com
           </a>
         </p>
-        <Link href="/">
+        <Link href="/products">
           <button type="button" width="300px" className="btn">
             Continue Shopping
           </button>
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Success
+export default Success;
