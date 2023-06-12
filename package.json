@@ -1,37 +1,30 @@
 {
-  "name": "react-next-sanity-ecommerce",
+  "name": "ecommerce",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prettier": "prettier --config .prettierrc \"{pages,components,utils,context}/**/*.{js,jsx,ts,tsx}\" --write"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@paypal/react-paypal-js": "^7.8.0",
+    "@babel/core": "^7.17.9",
     "@sanity/client": "^3.2.0",
     "@sanity/image-url": "^1.0.1",
     "@stripe/stripe-js": "^1.25.0",
-    "axios": "^0.27.2",
-    "bcryptjs": "^2.4.3",
     "canvas-confetti": "^1.5.1",
-    "js-cookie": "^3.0.1",
-    "jsonwebtoken": "^8.5.1",
-    "netlify-identity-widget": "^1.9.2",
-    "next": "12.1.6",
-    "next-connect": "^0.12.2",
+    "next": "12.1.0",
     "next-sanity-image": "^3.2.1",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-hot-toast": "^2.2.0",
     "react-icons": "^4.3.1",
-    "sass": "^1.51.0"
+    "stripe": "^8.209.0"
   },
   "devDependencies": {
-    "eslint": "8.15.0",
-    "eslint-config-next": "12.1.6",
-    "prettier": "^2.7.1"
+    "@babel/preset-react": "^7.16.7",
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.4"
   }
 }

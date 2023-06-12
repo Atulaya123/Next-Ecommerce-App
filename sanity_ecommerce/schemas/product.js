@@ -3,16 +3,6 @@ export default {
   title: 'Product',
   type: 'document',
   fields: [
-    { 
-      name: 'name',
-      title: 'Name',
-      type: 'string',
-    },
-    { 
-      name: 'price',
-      title: 'Price',
-      type: 'number',
-    },
     {
       name: 'image',
       title: 'Image',
@@ -23,8 +13,8 @@ export default {
       }
     },
     { 
-      name: 'details',
-      title: 'Details',
+      name: 'name',
+      title: 'Name',
       type: 'string',
     },
     { 
@@ -36,25 +26,15 @@ export default {
         maxLength: 90,
       }
     },
-    {
-      name: 'category',
-      title: 'Category',
+    { 
+      name: 'price',
+      title: 'Price',
+      type: 'number',
+    },
+    { 
+      name: 'details',
+      title: 'Details',
       type: 'string',
-    },
-    {
-      name: 'rating',
-      title: 'Rating',
-      type: 'number',
-    },
-    {
-      name: 'numReviews',
-      title: 'NumReviews',
-      type: 'number',
-    },
-    {
-      name: 'countInStock',
-      title: 'CountInStock',
-      type: 'number',
     }
   ]
 }
